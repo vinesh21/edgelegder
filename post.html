@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>post one</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/stylee.css">
+
+</head>
+<body id="home">
+    <header class="hero">
+        <div class="navbar" class="navbar top">
+        <h1 class="logo"> 
+            <span class="text-primary"><i class="fas fa-book-open"></i>
+                Edge</span>Ledger
+            </span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#Cases">Cases</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+<div class="content">
+    <h1>Blog</h1>
+    
+</div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>blog post one</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i>Posted By <strong>peter parker</strong> | May 09 2024
+                
+            </p>
+        <img src="images/blog/blog1.jpg" alt="">
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, obcaecati suscipit. Sunt cumque cum totam obcaecati pariatur, natus iusto nemo quisquam qui beatae, ipsa vero quo aliquid amet doloremque nihil!</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro odit molestiae recusandae aliquam repellat quia, ratione ad. Totam repellat reiciendis veniam nesciunt voluptate assumenda inventore quibusdam obcaecati perferendis nulla maiores culpa eos aut quae recusandae accusamus deserunt, rerum incidunt a amet laborum. Vitae aliquid nam, illo quidem rem tenetur dicta aut aspernatur perferendis voluptatibus nostrum enim impedit labore, animi nobis?
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, alias. Hic animi adipisci quia, necessitatibus ex itaque temporibus cum, fugit expedita commodi excepturi tenetur perferendis laborum explicabo illo magni voluptates nisi. Enim fuga suscipit odio quia eligendi optio quis dignissimos voluptas quibusdam quae magnam illum quos et reprehenderit earum saepe, dolores hic unde veritatis cupiditate labore architecto quisquam doloremque. Voluptas.
+                </p>
+
+            </p>
+        </section>
+      
+
+    
+
+ </main>
+    
+<footer class="footer bg-dark">
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>Copyright &copy; 2024 - edgeledger</p>
+</footer>
+
+<script>
+      const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function() {
+        if(window.pageYoffset > 100){
+            navbar.classList.remove('top');
+            if(!scrolled){
+                navbar.style.transform = 'translateY(-70px)';
+            }
+            setTimeout(function(){
+                navbar.style.transform = 'translateY(-70px)';
+                scrolled = true;
+
+            },200);
+        } else{
+            navbar.classList.add('top');
+            scrolled = false;
+        }
+    };
+    
+</script>
+</body>
+</html>

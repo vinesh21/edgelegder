@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>read our blogs</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/stylee.css">
+
+</head>
+<body id="home">
+    <header class="hero">
+        <div class="navbar" class="navbar top">
+        <h1 class="logo"> 
+            <span class="text-primary"><i class="fas fa-book-open"></i>
+                Edge</span>Ledger
+            </span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#Cases">Cases</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+<div class="content">
+    <h1>Blog</h1>
+    
+</div>
+    </header>
+
+    <main>
+        <article class="solutions flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/blog/blog1.jpg" alt="people";>
+                    </div>
+                    </div>
+                            <div class="column">
+                                <div class="column-2 bg-light">
+                                    <h4>Blog Post One</h4>
+                                    <p class="meta">
+                                        <i class="fas fa-user"></i>Posted By <strong>john doe</strong> | April 19 2024
+                                    </p>
+                                    <h2> We provide bespoke solutions</h2>
+                                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, obcaecati suscipit. Sunt cumque cum totam obcaecati pariatur, natus iusto nemo quisquam qui beatae, ipsa vero quo aliquid amet doloremque nihil!</p>
+                                        <a href="post.html" class="btn btn-dark">
+                                            <i class="fas fa-chevron"></i>
+                                            Read more
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+        </article>
+
+
+    
+
+        <article class="solutions flex-columns flex-reverse">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/blog/blog2.jpg" alt="people";>
+                    </div>
+                    </div>
+                            <div class="column">
+                                <div class="column-2 bg-dark">
+                                    <h4>Blog Post Two</h4>
+                                    <p class="meta">
+                                        <i class="fas fa-user"></i>Posted By <strong>jane Doe </strong> | April 29 2024
+                                    </p>
+                                
+                                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, obcaecati suscipit. Sunt cumque cum totam obcaecati pariatur, natus iusto nemo quisquam qui beatae, ipsa vero quo aliquid amet doloremque nihil!</p>
+                                        <a href="post.html" class="btn btn-light">
+                                            <i class="fas fa-chevron"></i>
+                                            Read more
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+        </article>
+
+        <article class="solutions flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/blog/blog3.jpg" alt="people";>
+                    </div>
+                    </div>
+                            <div class="column">
+                                <div class="column-2 bg-light">
+                                    <h4>Blog Post Three</h4>
+                                    <p class="meta">
+                                        <i class="fas fa-user"></i>Posted By <strong>peter parker</strong> | May 09 2024
+                                    </p>
+                                
+                                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, obcaecati suscipit. Sunt cumque cum totam obcaecati pariatur, natus iusto nemo quisquam qui beatae, ipsa vero quo aliquid amet doloremque nihil!</p>
+                                        <a href="post.html" class="btn btn-dark">
+                                            <i class="fas fa-chevron"></i>
+                                            Read more
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+        </article>
+ </main>
+    
+<footer class="footer bg-dark">
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>Copyright &copy; 2024 - edgeledger</p>
+</footer>
+
+<script>
+      const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function() {
+        if(window.pageYoffset > 100){
+            navbar.classList.remove('top');
+            if(!scrolled){
+                navbar.style.transform = 'translateY(-70px)';
+            }
+            setTimeout(function(){
+                navbar.style.transform = 'translateY(-70px)';
+                scrolled = true;
+
+            },200);
+        } else{
+            navbar.classList.add('top');
+            scrolled = false;
+        }
+    };
+    
+</script>
+</body>
+</html>
